@@ -23,4 +23,4 @@ dist-ssr
 *.sw?
 build/*
 bin/*
-#truffle-config.js
+truffle-config.js
