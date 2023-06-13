@@ -60,10 +60,9 @@ module.exports = async function(deployer, network, accounts) {
     
     let arr = new Array();
     arr.push([1685008800, 1000]);
-    arr.push([1686650400, 500]);
     arr.push([1689242400, 500]);
     arr.push([1691920800, 500]);
-    arr.push([1686499200, 500]);
+    arr.push([1694599200, 500]);
     arr.push([1697191200, 500]);
     arr.push([1699869600, 500]);
     arr.push([1702461600, 500]);
@@ -78,6 +77,7 @@ module.exports = async function(deployer, network, accounts) {
     arr.push([1726221600, 500]);
     arr.push([1728813600, 500]);
     arr.push([1731492000, 500]);
+    arr.push([1734084000, 500]);
     await ido.setThawInfo(arr);
     await ido.transferOwnership('0x3026108a822871FB6D08dC45C5e2854b51b79B25');
 

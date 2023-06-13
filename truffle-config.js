@@ -144,13 +144,13 @@ module.exports = {
     bscscan: 'S8F5KHVHKANZRH7MMXS3F6HYVTEAK6NX1F',
   },
   verify: {
-    // proxy: {
-    //   host: '192.168.1.250',
-    //   port: '7893',
-    // },
     proxy: {
-      host: '127.0.0.1',
-      port: '7890',
+      host: '192.168.1.250',
+      port: '7893',
     },
+    // proxy: {
+    //   host: '127.0.0.1',
+    //   port: '7890',
+    // },
   },
 };

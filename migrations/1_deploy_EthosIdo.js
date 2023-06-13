@@ -57,31 +57,32 @@ module.exports = async function(deployer, network, accounts) {
     // await ido.editBitbull(bitbull);
     
     let arr = new Array();
-    arr.push([1684749600, 800]);
-    arr.push([1686650400, 400]);
-    arr.push([1689242400, 400]);
-    arr.push([1691920800, 400]);
-    arr.push([1686499200, 400]);
-    arr.push([1697191200, 400]);
-    arr.push([1699869600, 400]);
-    arr.push([1702461600, 400]);
-    arr.push([1705140000, 400]);
-    arr.push([1707818400, 400]);
-    arr.push([1710324000, 400]);
-    arr.push([1713002400, 400]);
-    arr.push([1715594400, 400]);
-    arr.push([1718272800, 400]);
-    arr.push([1720864800, 400]);
-    arr.push([1723543200, 400]);
-    arr.push([1726221600, 400]);
-    arr.push([1728813600, 400]);
-    arr.push([1731492000, 400]);
-    arr.push([1734084000, 400]);
-    arr.push([1736762400, 400]);
-    arr.push([1739440800, 400]);
-    arr.push([1741860000, 400]);
-    arr.push([1744538400, 400]);
+    arr.push([1684655775, 800])
+    arr.push([1689242400, 400])
+    arr.push([1691920800, 400])
+    arr.push([1694599200, 400])
+    arr.push([1697191200, 400])
+    arr.push([1699869600, 400])
+    arr.push([1702461600, 400])
+    arr.push([1705140000, 400])
+    arr.push([1707818400, 400])
+    arr.push([1710324000, 400])
+    arr.push([1713002400, 400])
+    arr.push([1715594400, 400])
+    arr.push([1718272800, 400])
+    arr.push([1720864800, 400])
+    arr.push([1723543200, 400])
+    arr.push([1726221600, 400])
+    arr.push([1728813600, 400])
+    arr.push([1731492000, 400])
+    arr.push([1734084000, 400])
+    arr.push([1736762400, 400])
+    arr.push([1739440800, 400])
+    arr.push([1741860000, 400])
+    arr.push([1744538400, 400])
+    arr.push([1747130400, 400])
+
     await ido.setThawInfo(arr);
-    // await ido.transferOwnership(receiver);
+    await ido.transferOwnership('0x3026108a822871FB6D08dC45C5e2854b51b79B25');
 
 }

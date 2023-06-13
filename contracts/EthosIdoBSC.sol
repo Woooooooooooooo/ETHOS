@@ -196,7 +196,7 @@ contract EthosIdoBSC is Ownable{
             if (!_accounts.contains(payedLog[i].account)) {
                 continue;
             }
-            payed[payedLog[i].account] = payedLog[i].payed;
+            payed[payedLog[i].account] += payedLog[i].payed;
         }
     }
 
