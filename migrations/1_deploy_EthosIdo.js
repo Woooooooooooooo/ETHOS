@@ -52,7 +52,7 @@ module.exports = async function(deployer, network, accounts) {
         bitbull = "0xE835107A576DafB59597993dD774bb1879831F79";
     } 
 
-    await deployer.deploy(EthosIdo, info, receiver, bitbull);
+    await deployer.deploy(EthosIdo, info, bitbull);
     const ido = await EthosIdo.deployed();
     // await ido.editBitbull(bitbull);
     
