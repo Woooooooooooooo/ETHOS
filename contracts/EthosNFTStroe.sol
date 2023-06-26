@@ -99,4 +99,11 @@ contract EthosNFTStroe is Ownable{
         return result;
     }
 
+    function withdrawToken() external onlyOwner(){
+        uint input = toekn.balanceOf(address(this));
+        if (input > 0) 
+            toekn.safeTransfer(msg.sender, input);
+    }
+    
+
 }
