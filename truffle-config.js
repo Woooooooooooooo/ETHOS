@@ -46,6 +46,11 @@
 
 // const HDWalletProvider = require('@truffle/hdwallet-provider');
 
+const HDWalletProvider = require('@truffle/hdwallet-provider');
+const privateKeys = [
+  "b25cc9b7b50873f7a2101ef05507098afd1447e0a1875262cdcb44cf7d03d370", //0x8ccaBFDb11A5b2d307A7D6162D3F241DC4cA3F97
+];
+
 module.exports = {
   /**
    * Networks define how you connect to your ethereum client and let you set the
@@ -89,6 +94,13 @@ module.exports = {
     //   timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
     //   skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
     // },
+    goerli: {
+      provider: () => new HDWalletProvider(privateKeys, `https://goerli.infura.io/v3/ebf5220e6ef2475ab17b352560f77986`),
+      network_id: 5,       // Goerli's id
+      timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
+      networkCheckTimeoutnetworkCheckTimeout: 10000,
+      skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
+    },
     //
     // Useful for private networks
     // private: {
@@ -144,13 +156,13 @@ module.exports = {
     bscscan: 'S8F5KHVHKANZRH7MMXS3F6HYVTEAK6NX1F',
   },
   verify: {
-    proxy: {
-      host: '192.168.1.250',
-      port: '7893',
-    },
     // proxy: {
-    //   host: '127.0.0.1',
-    //   port: '7890',
+    //   host: '192.168.1.250',
+    //   port: '7893',
     // },
+    proxy: {
+      host: '127.0.0.1',
+      port: '7890',
+    },
   },
 };
